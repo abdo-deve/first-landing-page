@@ -66,7 +66,7 @@ main {
 .navbar__menu ul {
     padding-left: 0;
     margin: 0;
-    text-align: right;
+    text-align: left;
 }
 
 .navbar__menu li {
@@ -278,7 +278,7 @@ section.your-active-class .landing__container::after {
 @media only screen and (max-width: 35em){
     
     .navbar__menu {
-        display: none;
+        display:inherit;
     }
     .navbar__menu li a::before {
         display: none;
@@ -313,18 +313,17 @@ section.your-active-class .landing__container::after {
     }
 
     .navbar__menu {
-        background: #000;
+        background: #fff;
         top: 40px;
         right: 0;
         width: 100%;
-        position: absolute;
         text-align: center;
     }
 
     .navbar__menu li {
-        display: block;
+        display: inline-grid;
         padding: 15px;
-        border-bottom: 2px solid #eee;
+        border-bottom: 2px solid #fff;
     }
     
     .navbar__menu li a.active:hover {
